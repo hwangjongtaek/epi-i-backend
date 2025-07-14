@@ -1,0 +1,44 @@
+[project]
+name = "epi-i-backend"
+version = "0.1.0"
+description = "Helps guardians of children with epilepsy systematically and objectively record seizure symptoms and life patterns. The goal is to contribute to the child's treatment plan by providing accumulated data as accurate information during medical consultations."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[all]",
+    "supabase",
+    "asyncpg",
+    "pydantic-settings",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-asyncio",
+    "httpx",
+    "ruff",
+]
+
+[tool.pytest.ini_options]
+pythonpath = "."
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # Pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "UP", # pyupgrade
+    "A", # flake8-builtins
+    "FA", # flake8-future-annotations
+]
+ignore = ["B008"] # Allows FastAPI dependencies
+
+[tool.ruff.format]
+quote-style = "double"

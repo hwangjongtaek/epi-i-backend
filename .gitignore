@@ -1,0 +1,49 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# uv - auto-managed virtual environments
+# uv creates a .gitignore in the .venv directory itself, but it's good practice
+# to have it in the root .gitignore as well.
+.venv/
+
+# dotenv
+.env
+
+# IDE / Editor specific
+.idea/
+.vscode/
+*.swp
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# FastAPI specific (if any, usually covered by standard python)
+# No specific entries needed as FastAPI doesn't generate special files
+
+# Other
+.DS_Store
