@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="static/imgs/epi-i-logo-500.jpg" alt="Epi-i Logo"/>
+</div>
+
 # Epi-i Backend
 
 Helps guardians of children with epilepsy systematically and objectively record seizure symptoms and life patterns. The goal is to contribute to the child's treatment plan by providing accumulated data as accurate information during medical consultations.
